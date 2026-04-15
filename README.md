@@ -15,10 +15,14 @@ Works with any tmux-hosted agent: Codex CLI, Claude Code, Aider, etc.
 
 ## Install
 
-Paste this prompt into Claude Code:
+Paste this prompt into your AI assistant:
 
 ```
-请从 https://raw.githubusercontent.com/kongjiadongyuan/tmux-agent-supervisor/main/skills/tmux-agent-supervisor/SKILL.md 下载内容，保存到 ~/.claude/skills/tmux-agent-supervisor/SKILL.md（目录不存在则创建），完成后告诉我。
+请先判断你是否是 Claude Code（即运行在终端里、可以执行 Bash 命令的 Claude Code CLI）。
+
+如果是 Claude Code：请从 https://raw.githubusercontent.com/kongjiadongyuan/tmux-agent-supervisor/main/skills/tmux-agent-supervisor/SKILL.md 下载内容，保存到 ~/.claude/skills/tmux-agent-supervisor/SKILL.md（目录不存在则创建），完成后告诉我，并提示我重启 Claude Code 以加载 skill。
+
+如果不是 Claude Code：请告诉我"这个 skill 只能在 Claude Code 中使用，无法在当前环境安装。"
 ```
 
 Then **restart Claude Code** to load the skill.
